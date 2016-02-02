@@ -49,7 +49,7 @@ def add_header(response):
     """
     response.headers['X-UA-Compatible'] = 'IE=Edge,chrome=1'
     response.headers['Cache-Control'] = 'public, max-age=600'
-    return response
+    return response+"Hello World"
 
 
 @app.errorhandler(404)
